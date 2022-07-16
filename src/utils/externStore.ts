@@ -6,7 +6,7 @@ export interface ExternStore<T> {
 	subscribe: (listener: Listener) => () => void;
 }
 
-export function createStore<T>(initialState: T): ExternStore<T> {
+export function createExternStore<T>(initialState: T): ExternStore<T> {
 	let state = initialState;
 	const getState = () => state;
 	const listeners = new Set<Listener>();

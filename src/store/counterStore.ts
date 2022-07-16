@@ -1,3 +1,3 @@
-import { createStore } from "../utils/externStore";
+import { createExternStore } from "../utils/externStore";
 
-export const counterStore = createStore<number>(0);
+export const counterStore = createExternStore<number>(0);
