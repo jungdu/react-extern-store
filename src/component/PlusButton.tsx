@@ -1,7 +1,8 @@
 import React from "react";
 import { counterStore } from "../store/counterStore";
 
-const IncreaseButton: React.FC = () => {
+const PlusButton: React.FC = () => {
+	console.log("render PlusButton");
 	return (
 		<button
 			onClick={() => {
@@ -13,4 +14,4 @@ const IncreaseButton: React.FC = () => {
 	);
 };
 
-export default IncreaseButton;
+export default PlusButton;

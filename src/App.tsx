@@ -1,26 +1,24 @@
-import { useState } from "react";
 import Counter from "./component/Counter";
-import IncreaseButton from "./component/IncreaseButton";
+import PlusButton from "./component/PlusButton";
 
+// https://blog.saeloun.com/2021/12/30/react-18-usesyncexternalstore-api
 function App() {
+	console.log("render App");
 	return (
 		<div>
-			<h1>Extern Store</h1>
-			<h1>
-				https://blog.saeloun.com/2021/12/30/react-18-usesyncexternalstore-api
-			</h1>
+			<h1>Using Extern Store</h1>
 			<div>
 				<div>
-					<Counter></Counter> <IncreaseButton></IncreaseButton>
+					<Counter></Counter> <PlusButton></PlusButton>
 				</div>
 				<div>
-					<Counter></Counter> <IncreaseButton></IncreaseButton>
+					<Counter></Counter> <PlusButton></PlusButton>
 				</div>
 				<div>
-					<Counter></Counter> <IncreaseButton></IncreaseButton>
+					<Counter></Counter> <PlusButton></PlusButton>
 				</div>
 				<div>
-					<Counter></Counter> <IncreaseButton></IncreaseButton>
+					<Counter></Counter> <PlusButton></PlusButton>
 				</div>
 			</div>
 		</div>
